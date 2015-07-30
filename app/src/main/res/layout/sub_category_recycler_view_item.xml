@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/plato_comida"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/separator"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:text="categoria nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/separator"
+            android:layout_below="@+id/textView"
+            android:background="@color/primary"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="categoria descripcion"
+            android:layout_below="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
